@@ -1,0 +1,29 @@
+h1 
+    {
+    text-align: center;
+    color: red;
+    }
+  
+  h2 
+  {
+    text-align: center;
+    color: red;
+  }
+  .div1
+  {
+      border: 2px solid red;
+      border-radius: 5px;
+  }
+  .div2
+  {
+    border: 2px solid red;
+    border-radius: 5px;
+  }
+  p
+  {
+    text-align: center;
+    color: rgb(19, 17, 17);
+  }
+  
+  
+  
