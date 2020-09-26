@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function Person(name, age){
+            console.log("person constructor called");
+            this.name = name;
+            console.log("person constructor called and name assigned");
+            this.age = age;
+            console.log("person constructor called and age assigned");
+        }
+        console.log("create me as an instance of the person class");
+        var me = new Person("Vaibhav", 35);
+        var mywife = new Person("Swati", 33);
+
+    </script>
+</head>
+</html>

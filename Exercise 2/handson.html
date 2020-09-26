@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <script>
+            function testDOM (){
+                console.log('function is being called');
+                /**
+                 * Identify an element inside the document
+                 * 1. refer the document itself
+                 * 2.get the element ->using an identifier
+                 * */
+                document.getElementById('test').innerHTML="Replaced Test with the click of the button!!";
+            }
+        </script>
+        <style>
+            .test{
+                color:red;
+            }
+        </style>
+        <body>
+            <div id="test">Test</div>
+            <input type="replace text id in div" value="test" onclick="testDOM()">
+        </body>
+    </head>
+</html>
