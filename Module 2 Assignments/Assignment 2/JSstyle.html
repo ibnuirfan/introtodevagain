@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="JSstyle.js"></script>
+
+        <title>Inline/Internal/External JSscript</title>
+
+        <script>
+            function introduction(){
+                alert('Hi! this is my internal js with script in head');
+            }
+        </script>
+
+        <div id="introduction"><h3>This will be my internal JS</h3></div>  
+        <button type="button" onclick="introduction()">Lets Get it on!</button>
+    </head>
+    <br>
+    <section>
+    <body>
+        <h3>This will be my countdown using external JS style</h3>
+        <button type="button" onclick="counter()">Count down</button>
+    </body>
+    <body>
+    
+        <h3>This will be inline JS style</h3>
+        <script type="text/javascript">
+            function displaydate() {
+                document.getElementById("showcase").innerHTML= Date();
+            }
+        </script>
+        <p id="showcase"></p>
+        <button type="button" onclick="displaydate()">Don't click this</button>
+    </body>
+</section>
+</html>
