@@ -389,7 +389,7 @@ footer ul li a {
     }
 }
 
-/* Portfolio, About Me & Contact */
+/* Portfolio, About Me ,Contact */
 .grid-container {
     height: 100%;
     width: 100%;
@@ -415,6 +415,7 @@ footer ul li a {
 }
 
 .grid-item.item-2 {
+
     border: 2px solid #111;
     text-align: center;
     line-height: 30px;
@@ -444,9 +445,18 @@ footer ul li a {
         grid-column: span 6;
     }
 
+    .product-list {
+            display:grid;
+            height: 600px;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr) ;
+            grid-gap: 500px
+    }
+
 
 
   
 
   
 }
+
