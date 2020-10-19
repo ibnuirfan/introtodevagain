@@ -1,0 +1,99 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+p{
+    font-size: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.container{
+    width:100%;
+
+}
+.col-1{
+    margin:10% 35%;
+    width: 30%;
+    height: 70vh;
+    background-color: rgb(red, green, rgb(124, 333, 56));
+}
+.col-2{
+    width: 100%;
+}
+.col-3{
+    width: 100%;
+}
+.col-4{
+    width: 100%;
+}
+.col-5{
+    width: 100%;
+}
+.col-6{
+    width: 100%;
+}
+.col-7{
+    width: 100%;
+}
+.col-8{
+    width: 100%;
+}
+.col-9{
+    width: 100%;
+}
+.col-10{
+    width: 100%;
+}
+.col-11{
+    width: 100%;
+}
+.col-12{
+    width: 100%;
+}
+
+button{
+    width: 89px;
+    height: 65px;
+}
+
+.textValue{
+    width:94%;
+    height: 8rem;
+    padding-left: 18px;
+    background: black;
+    color: blanchedalmond;
+}
+
+#btn-alt1{
+    background-color: lightcoral;
+}
+#btn-alt2{
+    background-color: sandybrown;
+}
+#btn-solo{
+    background-color: slategrey;
+}
+#long{
+    background-color: aqua;
+    width: 183px;
+}
+#tall{
+    background-color: aquamarine;
+    height: 138px;
+}

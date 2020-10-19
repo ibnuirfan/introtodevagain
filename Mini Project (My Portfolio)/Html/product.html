@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <title>My Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <!-- css links -->
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/MainStyling.CSS">
+                              <!-- js links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -19,29 +22,26 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="product.html">Product</a></li>
       </ul>
+             <!--currency selector-->
+             <div style="float: right; position: relative;top: 20px;">
+              <form class="form-inline my-2 my-lg-0">
+                  <label>Currency</label>
+                  <select id="currency-select" onchange="currency()">
+                      <option value="SGD" selected>SGD</option>
+                      <option value="USD">USD</option>
+                      <option value="GBP">GBP</option>
+                      <option value="CAD">CAD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="AUD">AUD</option>
+                    </select>
+              </form>
     </nav>
   </header>
 <body>
     <main>
-        </section>
-        <div class="grid-container">
-          <div class="grid-item item-1">PORTFOLIO</div>
-            <div class="product-list"></div>
-            <div id="box1">product 1</div>
-            <div id="box2">product 2</div>
-            <div id="box3">product 3</div>
-            <div id="box4">product 4</div>
-            <div id="box5">product 5</div>
-            <br>
-            <div id="box6">product 6</div>
-            <div id="box6">product 7</div>
-            <div id="box6">product 8</div>
-            <div id="box6">product 9</div>
-            <div id="box6">product 10</div>
-        
-        
-        
-        </div> 
+            <!--displaying product catalog here-->
+             <div id="product-col"></div>    
+                      
 </body>
 </main>
 <Footer>
@@ -59,7 +59,10 @@
           <img src="../Images/instagramicon.png" alt= "instagram icon">
         </a>
       </div>
-
     </ul>
-  </Footer>    
+  </Footer>
+  <!--import file from js-->
+<script src="../js/currency.js"></script>
+<script src="../js/product.js"></script>
+<script src="../js/filter.js"></script>        
 </html>

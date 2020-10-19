@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Ibnu Irfan">
+<meta name="description" content="Pet Supplies">
+<title>Loyal Buddies</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!--     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- responsive -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+.col-item
+{
+    border: 2px solid #2323A1;
+    border-radius: 5px;
+    background: #FFF;
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+.col-item:hover .info {
+    background-color: rgba(215, 215, 244, 0.5); 
+}
+.col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #00990E;
+}
+
+.col-item .info .rating
+{
+    color: #003399;
+}
+
+.col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator
+{
+    border-top: 1px solid #FFCCCC;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+.col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add
+{
+    border-right: 1px solid #CC9999;
+}
+
+.col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.controls
+{
+    margin-top: 20px;
+}
+[data-slide="prev"]
+{
+    margin-right: 10px;
+}
+/* For mobile phones: */
+</style>
+
+</head>
+  <header>
+    
+    <section id="main">
+        <!--navigation-------------------------------->
+        <nav style=" height: 69px;" class="navbar navbar-expand-lg">
+        <!--logo--->
+        <div style="position: absolute;left: 7px;bottom: 0px;width: 75px;height: 33px;top: -4;top: 0px;">
+        <a href="LoyalBuddies.html" class="logo">
+            <img src="images/loyal-buddies.jpg"  style="width: 73px;height: 68px;">
+        </a>
+    </div>
+        <!--menu--------->
+        <div style="position: absolute;left: 250px;top: 24px;">
+        <div class="toggle"></div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="menu navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="active nav-item"><a href="#main" >Home</a></li>	
+        <li class="nav-item"><a href="#product">Product Catalog</a></li>	
+        <li class="nav-item"><a href="#about">About Us</a></li>	
+        <li class="nav-item"><a href="#testimonial">Testimonial</a></li>		
+        <li class="nav-item"><a href="#contact-form">Contact Us</a></li>	
+        </ul>
+                    </div>
+
+        </div>
+        <!--currency selector-->
+        <div style="float: right; position: relative;top: 20px;">
+        <form class="form-inline my-2 my-lg-0">
+            <label>Currency</label>
+            <select id="currency-select" onchange="currency()">
+                <option value="SGD" selected>SGD</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+              </select>
+        </form>
+
+    </div>
+        </nav>
+     </section>
+  </header>
+  <body>
+     <!--name--------------------------->
+ <div class="name">
+    <a name="up"></a>
+	<!--name--->
+	<h1>Welcome to <font color="palevioletred">LoyalBuddies®</font></h1>
+	<!--details--------------->
+	<p class="details">The relation that you develop with an animal is lifelong and rigid unlike of that what you build up with a human. Being able to connect with your pet could unlock your potential to appreciate love and affection for others.</p>
+	<!--cv button-------------------->
+	<a href="#product" class="bn-btn">Buy now</a>
+	</div>
+	<!--social---------------->
+	<div class="social">
+	    <a href="https://www.facebook.com/ElJonteMuchos/"><i class="fab fa-facebook-f"></i></a>	
+	    <a href="https://twitter.com/The_Greyside"><i class="fab fa-twitter"></i></a>
+	    <a href="https://www.instagram.com/ibnu_irfan/?hl=en"><i class="fab fa-instagram">            
+        </i></a>
+    </div>
+      <!--about----------------------->
+		<section id="about">
+            <!--text---------------------->
+            <div class="about-text">
+            <h1>Our Mission</h1>
+            <h2>Making Your Pet Happier</h2>
+            <p>We believe in the magic of creating the connection
+            between you and your lovely pet. It brings us joy to
+            provide our support by the product that we trade in 
+            return of your long lasting loving frienship with your
+            pet. We are doing our part to provide the support you
+            need. Let's start making connections!</p>
+            <button><a href="#product"></a>View Collections</button>
+            </div>
+            <!--about-model----------------->
+            <div class="about-model">
+            <img alt="model" src="images/catdog2.jpg">	
+            </div>
+            </section>
+            <!--displaying product catalog here-->
+               <section id="product-col">
+            <!--      <div class="product-list"> -->
+                    <div class="container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-md-sm col-md-3 col-xs-3 col-sm-3">
+                                        <div class="controls pull-right hidden-xs">
+                                            <a class="left fa fa-chevron-left btn btn" href="#carousel-example"
+                                                    data-slide="prev">
+                            
+                                            </a>
+                                            <a class="right fa fa-chevron-right btn" href="#carousel-example"
+                                                    data-slide="next">
+                                                        
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="carousel-example" class="carousel slide col-md-sm col-md-9 col-xs-6 col-sm-6 " data-ride="carousel">
+                                    <div class="carousel-inner align-middle visible-xs-">
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                 </div> -->
+                </section>            <!--Testimonial-------------------->
+        <div class="t-heading">
+        <h1>Testimonial</h1>
+        <p>Here Is The Some Servies Which We Provide You.</p>
+        </div>
+        <!--Testimonial-box-container--------->
+        <div class="t-container">
+        <!--box-1---------------->
+        <div class="t-box">
+        <!--img------------->
+        <div class="t-b-img">
+            <!--type----------->
+            <div class="t-type">Stacy, Michigan</div>
+            <!--name------->
+            <img src="images/testimonial1.jpg">
+        </div>
+        <!--text----------------->
+        <div class="t-b-text">
+        <a href="#">I'm really glad that i bought the MassageComb from LoyalBuddies. She love it!<br>Rating: ☆☆☆☆☆</a>	
+        </div>
+        </div>
+            <!--box-2---------------->
+        <div class="t-box">
+        <!--img------------->
+        <div class="t-b-img">
+        <!--type----------->
+            <div class="t-type">Michelle, Texas</div>
+            <!--name------->
+            <img src="images/testimonial2.jpg">
+        </div>
+        <!--text----------------->
+        <div class="t-b-text">
+        <a href="#">My cat absolutely love it. I can see that he is putting more effort to get some treat now.<br>Rating: ☆☆☆☆☆
+        </a>	
+        </div>
+        </div>
+        <!--text----------------->
+        </div>
+        </div>
+        </div>
+        </section>
+        <script type="text/javascript">
+        
+              /*Responsive Navigation*/
+          $(document).ready(function(){
+         $('.toggle').click(function(){
+             $('.toggle').toggleClass('active')
+             
+             $('nav ul').toggleClass('active-menu')
+            
+             
+         })
+     });
+    </script>
+    </body>
+    <footer>
+  <!--contact-form------------------->
+  <section id="contact-form">
+	<form>
+	<!--left--------------------------------------->
+	<div class="contact-left col-md-sm col-md-6 col-xs-6 col-sm-6" >
+	<h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Writ</font>e us</h1>
+	<!--name-------->
+	<div class="f-name">
+	<font >Name</font>
+	<input type="text" placeholder="Full Name"/>
+	</div>
+	<!--email-------->
+	<div class="f-email">
+	<font >Email</font>
+	<input type="email" placeholder="Example@gmail.com"/>
+	</div>
+	</div>
+	<!--right------------------------------------------->
+	<div class="contact-right">
+	<!--message-------->
+	<div class="message">
+	<font >Message</font>
+	<textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+	</div>
+	<!--submit-btn------------>
+	<button>submit</button>
+	</div>
+    <a href="#up"><button id="back-to-top-btn">
+        <i class="fas fa-angle-double-up"></i></button></a>
+	</form>
+	</section>
+    </footer>
+    <!--importing Java Script File to HTML-->
+    <script src="Java Script/buttonup.js"></script>
+    <script src="Java Script/currency.js"></script>
+    <script src="Java Script/product.js"></script>
+</html>
+
