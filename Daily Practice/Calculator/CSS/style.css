@@ -1,6 +1,13 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+body{
+    margin:0;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+}
+
 h1{
     font-size: 20px;
     text-transform: uppercase;
@@ -9,6 +16,7 @@ h1{
 
 h2{
     font-size: 15px;
+    color: whitesmoke;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -28,10 +36,9 @@ p{
 
 }
 .col-1{
-    margin:10% 35%;
+    background-image: linear-gradient(to right, blue, red, yellow);
     width: 30%;
-    height: 70vh;
-    background-color: rgb(red, green, rgb(124, 333, 56));
+    padding: 10% 35%;
 }
 .col-2{
     width: 100%;
@@ -67,33 +74,51 @@ p{
     width: 100%;
 }
 
+form{
+    text-align: center;
+    font-size: 25px;
+}
+
 button{
-    width: 89px;
+    width: 85px;
     height: 65px;
+    font-size: 20px;
+    transition: all 0.7s ease;
+    outline: none;
 }
 
-.textValue{
-    width:94%;
+button:hover{
+    background-color: black;
+    color: cornsilk;
+}
+.screen{
+    width:91%;
+    margin-right:25px;
     height: 8rem;
-    padding-left: 18px;
     background: black;
-    color: blanchedalmond;
+    color: whitesmoke;
+    font-size: 2rem;
 }
 
-#btn-alt1{
+.btn-alt1{
     background-color: lightcoral;
 }
-#btn-alt2{
+.btn-alt2{
     background-color: sandybrown;
 }
-#btn-solo{
+.btn-backspace{
+    background-color: rgb(184, 184, 53);
+}
+.btn-clear{
     background-color: slategrey;
 }
-#long{
-    background-color: aqua;
-    width: 183px;
+.btn-operator{
+    background-color: violet;
 }
-#tall{
+.btn-equal{
+    background-color: aqua;
+    width: 175px;
+}
+.btn-point{
     background-color: aquamarine;
-    height: 138px;
 }

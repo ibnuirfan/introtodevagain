@@ -7,48 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Ibnu Irfan">
     <meta name="description" content="Calculator">
-    <script src="JS/dynamic.js"></script>
     <link rel="stylesheet" href="../CSS/style.css">
     </head>
 <body>
     <section>
         <div class="container">
             <div class=col-1>
-                <form name="showValue">
-                    <input class="textValue" name="textValue"><h2>My Calculator ®</h2>
+                <form name="form">
+                    <input class="screen" id="screen" name="showValue"><h2>My Calculator ®</h2>
                 </form>
-                <table>
-                    <tr>
-                        <th><button type="button">C</button></th>
-                        <th><button type="button">÷</button></th>
-                        <th><button type="button">x</button></th>
-                        <th><button type="button">⌫</button></th>
-                    </tr>
-                    <tr>
-                        <th><button type="button" id="btn-alt2">7</button></th>
-                        <th><button type="button" id="btn-alt1">8</button></th>
-                        <th><button type="button" id="btn-alt2">9</button></th>
-                        <th><button type="button">-</button></th>
-                    </tr>
-                    <tr>
-                        <th><button type="button" id="btn-alt1">4</button></th>
-                        <th><button type="button" id="btn-alt2">5</button></th>
-                        <th><button type="button" id="btn-alt1">6</button></th>
-                        <th><button type="button">+</button></th>
-                    </tr>
-                    <tr>
-                        <th><button type="button" id="btn-alt2">1</button></th>
-                        <th><button type="button" id="btn-alt1">2</button></th>
-                        <th><button type="button" id="btn-alt2">3</button></th>
-                        <th rowspan= 2><button type="button" id="tall">=</button></th>
-                    </tr>
-                    <tr>
-                        <th><button type="button" id="btn-solo">0</button></th>
-                        <th colspan = 2><button type="button" id="long">.</button></th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-</body>
+                        <button id="btn" onclick="clearValue('')" class="btn-clear">C</button>
+                        <button id="btn-operator" onclick="operator('÷')" class="btn-operator" value="/">÷</button>
+                        <button id="btn-operator" onclick="operator('x')" class="btn-operator" value="*">x</button>
+                        <button id="btn" onclick="backspaceValue()" class="btn-backspace">⌫</button>
+                        <button id="btn-num" onclick="buttonValue('7')" class="btn-alt2" value="7">7</button>
+                        <button id="btn-num" onclick="buttonValue('8')" class="btn-alt1" value="8">8</button>
+                        <button id="btn-num" onclick="buttonValue('9')" class="btn-alt2" value="9">9</button>
+                        <button id="btn-operator" onclick="operator('-')" class="btn-operator" value="-">-</button>
+                        <button id="btn-num" onclick="buttonValue('4')" class="btn-alt1" value="4">4</button>
+                        <button id="btn-num" onclick="buttonValue('5')" class="btn-alt2" value="5">5</button>
+                        <button id="btn-num" onclick="buttonValue('6')" class="btn-alt1" value="6">6</button>
+                        <button id="btn" onclick="operator('+')" class="btn-operator" value="+">+</button>
+                        <button id="btn-num" onclick="buttonValue('1')" class="btn-alt2" value="1">1</button>
+                        <button id="btn-num" onclick="buttonValue('2')" class="btn-alt1" value="2">2</button>
+                        <button id="btn-num" onclick="buttonValue('3')" class="btn-alt2" value="3">3</button>
+                        <button id="btn-operator" onclick="buttonEqual()" class="btn-equal" value="=">=</button>                        
+                        <button id="btn-num" onclick="buttonValue('0')" class="btn-alt1" value="0">0</button>
+                        <button id="btn-decimal" onclick="buttonDecimal('.')" class="btn-point" value=".">.</button>
+            </div> id="btn" 
+        </div> 
+    </section> 
+    <script src="../JS/dynamic.js"></script>
+</body> 
 </html>
