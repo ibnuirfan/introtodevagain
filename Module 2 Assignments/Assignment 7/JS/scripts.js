@@ -10,11 +10,12 @@ $('.remaining').text(show);
     }
 })
 
-
 function postthis() {
     let username = document.getElementById('name').value;
     let text = document.getElementById('text').value;
-    document.getElementById('posting').innerHTML = username + ':' + ' ' + text;
+    let show = username + ':' + ' ' + text;
+    $('.posting').text(show);
+    /*document.getElementById('posting').innerHTML = username + ':' + ' ' + text; alternative method */
     if (username === '' || text === '') {
         alert('Please fill up the form before submitting');
         return true;
@@ -23,9 +24,6 @@ function postthis() {
             return false;
         }
 }
-
-
-
 
 /* i tried using jquery method */
 /*
