@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { Home } from './components/Home';
-import  SearchBar  from './components/SearchBar';
 import { NoMatch } from './Nomatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/Navigationbar';
-import { Categories } from './components/Categories';
 import FooterPage from './components/Footer';
+import FullRecipe from './components/FullRecipe';
+import SearchBar from './components/SearchBar';
+import RandomRecipe from './components/RandomRecipe';
 
 
 class App extends Component {
@@ -18,8 +19,9 @@ class App extends Component {
         <NavigationBar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={SearchBar} />
-            <Route exact path="/contact" component={Categories} />
+            <Route exact path="/recipes" component={FullRecipe} />
+            <Route exact path="/random" component={RandomRecipe} />
+            <Route path="/search"  component={SearchBar}/>
             <Route component={NoMatch} />
           </Switch>
           <FooterPage />
