@@ -49,15 +49,10 @@ h1{
 .card-container {
   display: grid;
   padding: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-gap: 1rem;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background: #D3C2EB;
-}
 .center{
   display: block;
   margin: auto;
@@ -66,10 +61,6 @@ h1{
   width: 50%;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transform: scale(1.05);
-}
 
 .container {
   padding: 0px 40px;
@@ -78,27 +69,28 @@ h1{
 .get-recipes-btn{
   height: 3em;
   width: 7em;
-  background: #D3C2EB;
+  background: #fff59d;
   border: none;
-  color: #AF1B3F;
+  color: #E0115F;
   border-radius: 25px;
   font-family: 'Dancing Script', cursive;
   font-size: 3em;
+  margin-bottom: 30px;
 }
 
 .get-recipes-btn:hover{
-  background: #9171bf;
+  background: whitesmoke;
   cursor: pointer;
 }
 
 .random{
   text-align: center;
   padding: 55px;
-  margin: 75px;
+  margin: 20px 60px 75px 75px ;
 }
 
 .full-container{
-  background: #D3C2EB;
+  background:#fff59d;
   padding: 25px;
   margin: 100px
 }
@@ -139,14 +131,14 @@ h1{
 
 
 .add-btn{
-  height: 2em;
-  width: 7em;
-  background: #9171bf;
+  height: 3rem;
+  width: 5rem;
+  background: #E0115F;
   border: none;
-  color: #AF1B3F;
+  color: whitesmoke;
   border-radius: 25px;
   font-family: 'Dancing Script', cursive;
-  font-size: 2em;
+  font-size: 1rem;
   margin: auto;
 }
 

@@ -14,16 +14,16 @@ class FullRecipe extends Component {
     componentDidMount() {
         let recipeId = this.props.location.state.recipeId 
         fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${API_KEY}`)
-        .then(resp => resp.json())
-        .then(recipe => {
+        .then((resp) => resp.json())
+        .then((recipe) => {
             this.setState({
-                recipeInfo: recipe
+                recipeInfo: recipe,
             })
         })
 
         fetch(`https://api.spoonacular.com/recipes/${recipeId}/similar?apiKey=${API_KEY}&number=3`)
         .then(resp => resp.json())
-        .then(recipeArr => {
+        .then((recipeArr) => {
             this.setState({
                 similarRecipes: recipeArr
             })
