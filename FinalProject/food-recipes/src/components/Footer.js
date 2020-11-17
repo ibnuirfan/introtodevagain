@@ -7,6 +7,10 @@ const Styles = styled.div`
   background: #fff59d;
 }
 
+.name {
+  color: #E0115F;
+}
+
 `;
 
 const FooterPage = () => {
@@ -15,7 +19,7 @@ const FooterPage = () => {
     <MDBFooter className="font-small mt-4 dark">
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Designed by: <a href="https://github.com/ibnuirfan/introtodevagain"> Ibnu Irfan </a>
+          &copy; {new Date().getFullYear()} Designed by: <a className="name" href="https://github.com/ibnuirfan/introtodevagain"> Ibnu Irfan </a>
         </MDBContainer>
       </div>
     </MDBFooter>

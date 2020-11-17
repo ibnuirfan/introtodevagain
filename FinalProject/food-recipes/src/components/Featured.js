@@ -17,7 +17,7 @@ const Styles = styled.div`
     }
 
     .text-center {
-        color: #F5F5DC;
+        color: #fff59d;
         text-transform: uppercase;
     }
 

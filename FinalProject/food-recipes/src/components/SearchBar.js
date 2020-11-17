@@ -1,100 +1,56 @@
-import React, { useState, useRef } from 'react';
-import FontAwesome from 'react-fontawesome';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
 import styled from 'styled-components';
 
 const Styles = styled.div`
+ .input-group-append {
+   margin-top: 10px;
+ }
 
-.gap{
-    margin-top: 100px;
+.text-capitalize {
+  margin-top: 40px;
 }
 `;
 
-const StyledSearchBar = styled.div`
-  width: 100%;
-  height: 105px;
-  background: #1c1c1c;
-  padding: 25px 20px 0px 20px;
-  box-sizing: border-box;
-  color: #fff;
-`;
-
-const StyledSearchBarContent = styled.div`
-  max-width: 1280px;
-  width: 100%;
-  height: 55px;
-  background: #353535;
-  margin: 0 auto;
-  border-radius: 40px;
-  position: relative;
-  color: #fff;
-
-  .fa-search {
-    position: absolute;
-    left: 20px;
-    top: 12px;
-    color: #fff;
-    z-index: 1000;
-  }
-
-  input {
-    font-family: 'Abel', sans-serif;
-    font-size: 28px;
-    position: absolute;
-    left: 0px;
-    margin: 8px 0;
-    padding: 0 0 0 60px;
-    border: 0;
-    width: 95%;
-    background: transparent;
-    height: 40px;
-    color: #fff;
-    box-sizing: border-box;
-
-    :focus {
-      outline: none;
-    }
-
-    @media screen and (max-width: 720px) {
-      font-size: 28px;
-    }
-  }
-`;
-
-const SearchBar = ({ callback }) => {
-    const [state, setState] = useState('');
-    const timeOut = useRef(null);
-  
-    const doSearch = event => {
-      const { value } = event.target;
-      
-      clearTimeout(timeOut.current);
-      setState(value);
-  
-      timeOut.current = setTimeout(() => {
-        callback(value);
-      }, 500);
-    }
-
+export class SearchBar extends Component {
+  render() {
+    const {handleChange, HandleSubmit, search} = this.props;
     return (
       <Styles>
-        <StyledSearchBar>
-          <StyledSearchBarContent>
-            <FontAwesome className="fa-search" name="search" size="2x" />
-            <input
-              type="text"
-              placeholder="Search Movie"
-              onChange={doSearch}
-              value={state}
-            />
-          </StyledSearchBarContent>
-        </StyledSearchBar>
-        </Styles>
-      )
-    }
-    
-    SearchBar.propTypes = {
-      callback: PropTypes.func,
-    }
-    
-    export default SearchBar;
+      <div className="container">
+        <div className="row">
+          <div className="col-10 mx-auto col-md-8 mt-5 text-center">
+            <h3 className="text-capitalize">What would you like to cook today?</h3>
+            <form className="mt-3">
+              <label htmlFor="search" className="text-capitalize">
+              </label>
+              <div className="input-group">
+                <input
+                type="text"
+                name="search"
+                className="form-control"
+                placeholder="type your search here.."
+                value={search}
+                onChange={handleChange} 
+                />
+              </div>
+              <div className="input-group-append d-flex justify-content-center">
+                <button
+                  type="submit"
+                  className="input-group-text bg-warning text-white"
+                  onClick={HandleSubmit}
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </Styles>
+    )
+  }
+}
+
+export default SearchBar
+
+

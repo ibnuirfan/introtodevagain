@@ -1,0 +1,15 @@
+import React, { Component } from 'react';
+import Recipe from './Recipe';
+
+export class RecipeList extends Component {
+    render() {
+        return (
+            <div>
+                hello from recipe list  
+                <Recipe />  
+            </div>
+        )
+    }
+}
+
+export default RecipeList
