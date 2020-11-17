@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import {withRouter} from "react-router";
-import  Layout  from './Layout';
 import styled from 'styled-components';
 
 const Styles = styled.div`
-.card{
     .card {
         height: 13rem;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -15,7 +13,7 @@ const Styles = styled.div`
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         transform: scale(1.05);
       }
-}
+
 `;
 class RecipeCard extends Component {
     

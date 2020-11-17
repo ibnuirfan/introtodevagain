@@ -38,7 +38,7 @@ class RandomRecipe extends Component {
             <Styles>
             <div className="random gap">
                 <button onClick={this.onClick} className= "get-recipes-btn" >Random Recipes</button>
-                <div className="card-container">{getRecipes }</div>
+                <div className="card-container">{getRecipes}</div>
             </div>
             </Styles>
         );
