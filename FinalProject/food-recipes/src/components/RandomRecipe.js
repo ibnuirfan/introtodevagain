@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
 import styled from 'styled-components';
+import {Container} from 'react-bootstrap';
 
 let API_KEY = 'ac15342574dd4e77b10b5a7c9250e4e0';
 
 
-const Styles = styled.div`
+const gap = { marginTop : "100px" , textAlign: "center" };
 
-.gap{
-    margin-top: 100px;
-}
-`;
 
 class RandomRecipe extends Component {
 
@@ -32,15 +29,21 @@ class RandomRecipe extends Component {
         
     render() {
         // console.log(this.state.random)
+        
         const getRecipes = this.state.random.map(recipe => 
             <RecipeCard key={recipe.id} recipe={recipe}/>)
         return (
-            <Styles>
-            <div className="random gap">
-                <button onClick={this.onClick} className= "get-recipes-btn" >Random Recipes</button>
-                <div className="card-container">{getRecipes}</div>
-            </div>
-            </Styles>
+                    <div style={gap}>
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col-12">
+                                     <button onClick={this.onClick} className= "get-recipes-btn" >Random Recipes</button>
+                                        <div className="card-container">{getRecipes}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
         );
     }
 }

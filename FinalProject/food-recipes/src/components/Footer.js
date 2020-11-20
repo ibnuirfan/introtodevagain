@@ -19,7 +19,7 @@ const FooterPage = () => {
     <MDBFooter className="font-small mt-4 dark">
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Designed by: <a className="name" href="https://github.com/ibnuirfan/introtodevagain"> Ibnu Irfan </a>
+          &copy; {new Date().getFullYear()} Designed by: <a className="name" href="https://github.com/ibnuirfan/introtodevagain/tree/master/FinalProject"> Ibnu Irfan </a>
         </MDBContainer>
       </div>
     </MDBFooter>

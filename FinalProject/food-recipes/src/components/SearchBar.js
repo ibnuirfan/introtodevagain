@@ -35,7 +35,7 @@ onSubmit = (event) => {
     // console.log(API_KEY)
     fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${this.state.searchInput}&number=12&apiKey=${API_KEY}`)
     .then(resp => resp.json())
-    // .then(json_resp => console.log(json_resp))
+    //.then(json_resp => console.log(json_resp))
     .then((resp) => {
         this.setState({
             searchInput: "",
