@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Buffer from './Buffer';
 let API_KEY = 'ac15342574dd4e77b10b5a7c9250e4e0';
 
+const gap = { marginTop : "20px" };
 
 class FullRecipe extends Component {
 
@@ -31,7 +32,7 @@ class FullRecipe extends Component {
 
     }
 
-       handleAddRecipeToCookbook = () => {
+       handleAddRecipeToFavourite = () => {
           let recipeId = this.props.history.location.state.recipeId
         fetch(`http://localhost:3001/recipes`, {
           method:'POST',
@@ -90,10 +91,10 @@ class FullRecipe extends Component {
                         } )}</ul>
 
                         <div>
-                            <button className="add-btn center" onClick={() => this.handleAddRecipeToCookbook()}>Add To Cookbook</button>
+                            <button className="add-btn center" onClick={() => this.handleAddRecipeToFavourite()}>Add to favourite</button>
                         </div>
            
-                    <h1>Similar Recipes</h1>
+                    <h1 style={gap}>Similar Recipes</h1>
                     <div className="card-container">
                     {getSimilarRecipes}
                     </div>

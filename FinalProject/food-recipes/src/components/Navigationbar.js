@@ -55,6 +55,11 @@ export const NavigationBar = () => (
               <Link to="/random"><strong>Random</strong></Link>
             </Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
+              <Link to="/favourite"><strong>Favourite</strong></Link>
+            </Nav.Link>
+          </Nav.Item>     
         </Nav>
       </Navbar.Collapse>
     </Navbar>

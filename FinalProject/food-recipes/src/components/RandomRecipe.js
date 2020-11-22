@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
-import styled from 'styled-components';
-import {Container} from 'react-bootstrap';
 
 let API_KEY = 'ac15342574dd4e77b10b5a7c9250e4e0';
 

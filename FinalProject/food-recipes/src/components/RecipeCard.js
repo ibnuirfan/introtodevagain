@@ -27,7 +27,7 @@ class RecipeCard extends Component {
 
     }
     render() {
-        const {image, title, id} = this.props.recipe
+        const {image, title} = this.props.recipe
         // console.log(this.props.onlineId)
             return (
                 <Container>

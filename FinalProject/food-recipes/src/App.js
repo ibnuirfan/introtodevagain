@@ -10,6 +10,8 @@ import FullRecipe from './components/FullRecipe';
 import SearchBar from './components/SearchBar';
 import RandomRecipe from './components/RandomRecipe';
 
+import {GlobalProvider, GlobalContext} from './context/GlobalState';
+
 
 class App extends Component {
   render() {
