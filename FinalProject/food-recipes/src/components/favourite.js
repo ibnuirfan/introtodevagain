@@ -22,7 +22,7 @@ export const Favouritelist = () => {
             ))}
           </div>
         ) : (
-          <h3>No movies in your list! Add some!</h2>
+          <h3>No movies in your list! Add some!</h3>
         )}
       </div>
     </div>
