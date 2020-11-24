@@ -9,7 +9,7 @@ const Styles = styled.div`
  }
 
 .text-capitalize {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 `;
 
@@ -28,14 +28,8 @@ onChange = (event) => {
 
 onSubmit = (event) => {
     event.preventDefault()
-    // event.target.reset() // no! not in react
-    // console.log(this.props.newMessage)
-    // this.setState({ ...defaultState })
-    // console.log(this.state.searchInput)
-    // console.log(API_KEY)
     fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${this.state.searchInput}&number=12&apiKey=${API_KEY}`)
     .then(resp => resp.json())
-    //.then(json_resp => console.log(json_resp))
     .then((resp) => {
         this.setState({
             searchInput: "",

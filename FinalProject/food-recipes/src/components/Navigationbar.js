@@ -29,6 +29,10 @@ const Styles = styled.div`
     .navbar-toggler{
       background-color: #F5F5DC;
     }
+
+    .navbar-collapse{
+      margin bottom: 20px;
+    }
 `;
 
 export const NavigationBar = () => (
@@ -55,11 +59,6 @@ export const NavigationBar = () => (
               <Link to="/random"><strong>Random</strong></Link>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/favourite"><strong>Favourite</strong></Link>
-            </Nav.Link>
-          </Nav.Item>     
         </Nav>
       </Navbar.Collapse>
     </Navbar>
